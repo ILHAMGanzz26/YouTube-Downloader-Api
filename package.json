@@ -1,0 +1,13 @@
+{
+  "name": "ytmp4-server",
+  "version": "1.0.0",
+  "description": "Stable YouTube downloader API with video + audio URLs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "child_process": "^1.0.2"
+  }
+}
