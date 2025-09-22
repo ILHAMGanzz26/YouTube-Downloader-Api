@@ -1,17 +1,17 @@
-# Fitur ✨
+## Fitur ✨
 - Mendownload video YouTube hingga 1080p
 - Mendapatkan URL video & audio terpisah
 - Support YouTube Shorts
 - Bisa digabung menggunakan ffmpeg menjadi satu file MP4
 - Ringan, cocok dijalankan di Termux atau VPS
 
-# Persyaratan ⚠
+## Persyaratan ⚠
 - Termux terbaru / Node.js environment
 - Node.js v22+
 - Python 3 (untuk yt-dlp)
 - ffmpeg (opsional, untuk merge video + audio)
 
-## Instalasi Via Termux
+### Instalasi Via Termux
 ```php
 $ pkg update -y
 $ pkg upgrade -y
@@ -27,7 +27,7 @@ npm install
 ```
 > Jika error permission (EACCES), gunakan npm install --no-bin-links.
 
-## Run Api🔥
+### Run Api🔥
 ```bash
 node index.js
 ```
@@ -38,7 +38,7 @@ node index.js
 http://127.0.0.1:5000/downloader/ytmp4v2?url=https://youtu.be/z_dt9_D6g40?si=T7Myco7GRAxsjtQg
 ```
 
-## Contoh Response
+### Contoh Response
 ```json
 {
   "status": true,
@@ -53,11 +53,11 @@ http://127.0.0.1:5000/downloader/ytmp4v2?url=https://youtu.be/z_dt9_D6g40?si=T7M
 }
 ```
 
-## Merge Video + Audio (Opsional)
+### Merge Video + Audio (Opsional)
 ```python
 ffmpeg -i "<video_url>" -i "<audio_url>" -c copy output.mp4
 ```
-## Tips
+### Tips
 • Update yt-dlp agar selalu support YouTube terbaru:
 ```bash
 pip install -U yt-dlp
@@ -68,7 +68,7 @@ http://<IP_HP>:5000/downloader/ytmp4v2?url=<YOUTUBE_URL>
 ```
 Untuk hosting permanen, bisa deploy ke Firebase Cloud Run, Render, atau Heroku.
 
-## Lisensi
+### Lisensi
 Open Source, bebas digunakan
 
 Creator: IlhamGanz
